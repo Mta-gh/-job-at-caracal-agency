@@ -24,14 +24,14 @@ const Page: NextPage = () => {
 					</Col>
 					<Col className="hidden md:grid" colStart={[2, null, 14, null, 14]} colEnd={[25, null, 26, null, 26]}>
 						<div className="flex justify-between items-center">
-							<a href="#">Home</a>
-							<a href="#" className="hover:underline	transition-all">
+							<a href="#" className='underlined__links'>Home</a>
+							<a href="#" className="underlined__links">
 								About
 							</a>
-							<a href="#" className="hover:underline	transition-all">
+							<a href="#" className="underlined__links">
 								History
 							</a>
-							<a href="#" className="hover:underline	transition-all">
+							<a href="#" className="underlined__links">
 								Philanthropy
 							</a>
 							<a
@@ -183,16 +183,16 @@ const Page: NextPage = () => {
 					</Col>
 
 					<Col className="hidden md:grid" colStart={[2, null, 18, null, 14]} colEnd={[26, null, 24, null, 20]}>
-						<a href="#" className="footer__links">
+						<a href="#" className="footer__links ">
 							Home
 						</a>
-						<a href="#" className="footer__links">
+						<a href="#" className="footer__links ">
 							About
 						</a>
-						<a href="#" className="footer__links">
+						<a href="#" className="footer__links ">
 							History
 						</a>
-						<a href="#" className="footer__links">
+						<a href="#" className="footer__links ">
 							Contact
 						</a>
 					</Col>
