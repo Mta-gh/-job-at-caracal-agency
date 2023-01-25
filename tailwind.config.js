@@ -16,6 +16,8 @@ const extraColumns = {
 	27: '27',
 };
 
+const { fontFamily } = require('tailwindcss/defaultTheme');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ['./src/pages/**/*.{js,ts,jsx,tsx}', './src/comps/**/*.{js,ts,jsx,tsx}', './src/app/**/*.{js,ts,jsx,tsx}'],
@@ -27,10 +29,24 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			fontFamily: {
+				sans: ['var(--karla)', ...fontFamily.sans],
+				jetbrains: ['var(--jetbrains)', ...fontFamily.sans],
+				karla: ['var(--karla)', ...fontFamily.sans],
+			},
 			gridColumnStart: extraColumns,
 			gridColumnEnd: extraColumns,
 			gridTemplateColumns: {
 				container: '[full-start] minmax(calc(calc(100% - 1440px) / 2), 1fr) [main-start] repeat(24, [col-start] 1fr) [main-end] minmax(calc(calc(100% - 1440px) / 2), 1fr) [full-end]',
+			},
+			colors: {
+				primaryBlue: 'var(--color-primary)',
+				secondaryBlue: 'var(--color-secondary) ',
+				tertiaryBlue: 'var(--color-tertiary)',
+				textBlueGrey: 'var(--color-text)',
+			},
+			backgroundImage: {
+				'hero-pattern': "url('/hero-bg.svg')",
 			},
 		},
 	},

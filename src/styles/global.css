@@ -1,3 +1,57 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	:root {
+		/* For rgb(255 115 179 / <alpha-value>) */
+		--color-primary: #070d31;
+		--color-secondary: #8bc0f1;
+		--color-tertiary: #04081f;
+		--color-text: #c9d6dd;
+	}
+}
+
+html {
+	background-color: var(--color-primary);
+}
+
+img {
+	max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+p {
+	color: #ffffff;
+}
+
+h1,
+h2,
+small,
+.footer__links {
+	font-family: var(--jetbrains);
+}
+
+h1,
+h2,
+h5,
+.footer__links {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+h5,
+small,
+.footer__links {
+	letter-spacing: 0.1rem;
+}
+
+small {
+	font-size: 14px;
+	color: var(--color-secondary);
+}
