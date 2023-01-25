@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Col from '../comps/Layout/Col';
 import Container from '../comps/Layout/Container';
 import Arrow from '../comps/Svg/Arrow';
-import BehermanLogo from '../comps/Svg/beherman';
+import BehermanLogo from '../comps/Svg/Beherman';
 import CaracalLogo from '../comps/Svg/CaracalLogo';
 
 const Page: NextPage = () => {
@@ -45,7 +45,7 @@ const Page: NextPage = () => {
 				</Container>
 				<Container>
 					<Col className="text-6xl md:text-7xl pt-14 pb-12 md:py-32" colStart={[2, null, 3, null, 3]} colEnd={[25, null, 18, null, 17]}>
-						<h2 className="font-jetbrains uppercase font-bold ">Nearly a century driven by a passion for excellence</h2>
+						<h2 className="font-jetbrains uppercase font-bold tracking-widest	">Nearly a century driven by a passion for excellence</h2>
 					</Col>
 				</Container>
 				{/*<MobileMenu />*/}
@@ -87,7 +87,7 @@ const Page: NextPage = () => {
 									</h3>
 									<a
 										href="#"
-										className="flex items-center rounded-full bg-black text-white py-6 px-10 btn border border-secondaryBlue font-jetbrains text-sm uppercase  tracking-widest hover:bg-white hover:border-white hover:text-black transition-all"
+										className="flex items-center rounded-full bg-black text-white py-6 px-10 btn border border-secondaryBlue font-jetbrains text-sm uppercase  tracking-widest hover:bg-white hover:border-white hover:text-black transition-all whitespace-nowrap"
 									>
 										<span className="mr-4">Contact us</span>
 										<Arrow />
@@ -174,7 +174,7 @@ const Page: NextPage = () => {
 							</h4>
 							<a
 								href="#"
-								className="flex items-center rounded-full bg-transparent text-white py-3 px-6 btn border border-secondaryBlue font-jetbrains text-sm uppercase  tracking-widest hover:bg-white hover:border-white hover:text-black transition-all"
+								className="flex items-center rounded-full bg-transparent text-white py-3 px-6 btn border border-secondaryBlue font-jetbrains text-sm uppercase  tracking-widest hover:bg-white hover:border-white hover:text-black transition-all whitespace-nowrap"
 							>
 								<span className="mr-4">Contact us</span>
 								<Arrow />
@@ -206,10 +206,10 @@ const Page: NextPage = () => {
 					</Col>
 				</Container>
 				<Container>
-					<Col className="" colEnd={[26, null, 18, null, 14]}>
+					<Col className="" colEnd={[26, null, 18, null, 8]}>
 						<img src="/logo-beherman-corpo.png" alt="Beherman log" />
 					</Col>
-					<Col className="text-xs" colStart={[2, null, 18, null, 14]} colEnd={[26, null, 24, null, 26]}>
+					<Col className="text-xs" colStart={[2, null, 18, null, 8]} colEnd={[26, null, 24, null, 26]}>
 						<div className="flex flex-col justify-between md:justify-end gap-4 md:flex-row">
 							<div className="flex py-3 justify-between border-b border-textBlueGrey md:border-0 md:py-0 md:gap-4">
 								<a href="#" className="text-textBlueGrey">
