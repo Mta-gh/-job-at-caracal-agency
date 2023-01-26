@@ -82,6 +82,7 @@ small {
 /* Mobile menu */
 .burger__menu {
 	position: fixed;
+	z-index: 3;
 	top: 1rem;
 	right: 1.5rem;
 	width: 50px;
@@ -108,5 +109,18 @@ small {
 .burger__menu .burger__line:nth-of-type(2) {
 	opacity: 1;
 	transition: opacity .2s ease-out;
-	
+}
+
+.test__menu {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: -100vw;
+	background: black;
+	z-index: 2;
+}
+
+.is__open .test__menu {
+	left: 0;
 }
