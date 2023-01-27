@@ -1,6 +1,6 @@
 // import { useState } from 'react';
 import { useState, useEffect } from 'react';
-// import BehermanLogo from '';
+import BehermanLogo from '../Svg/Beherman';
 
 
 export default function Component() {
@@ -20,8 +20,9 @@ export default function Component() {
 					<span className="burger__line"></span>
 				</button>
 				<div className="test__menu transition-all flex flex-col items-center justify-center text-5xl">
-				{/* <BehermanLogo /> */}
-
+					<div className="absolute top-10">
+						<BehermanLogo  />
+					</div>
 				<a href="#" className='underlined__links mb-6'>Home</a>
 							<a href="#" className="underlined__links  mb-6">
 								About

@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Col from '../comps/Layout/Col';
 import Container from '../comps/Layout/Container';
 import MobileMenu from '../comps/Navigation/MobileMenu';
+import Footer from '../comps/Layout/Footer';
 import Arrow from '../comps/Svg/Arrow';
 import BehermanLogo from '../comps/Svg/Beherman';
 import CaracalLogo from '../comps/Svg/CaracalLogo';
@@ -236,6 +237,7 @@ const Page: NextPage = () => {
 					</Col>
 				</Container>
 			</footer>
+			<Footer />
 		</div>
 	);
 };
