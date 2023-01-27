@@ -3,11 +3,9 @@ import Head from 'next/head';
 
 import Col from '../comps/Layout/Col';
 import Container from '../comps/Layout/Container';
-import MobileMenu from '../comps/Navigation/MobileMenu';
+import Header from '../comps/Layout/Header';
 import Footer from '../comps/Layout/Footer';
 import Arrow from '../comps/Svg/Arrow';
-import BehermanLogo from '../comps/Svg/Beherman';
-import CaracalLogo from '../comps/Svg/CaracalLogo';
 import Image from 'next/image';
 
 const Page: NextPage = () => {
@@ -17,42 +15,7 @@ const Page: NextPage = () => {
 				<title>Beherman Group - Home</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-
-			<header className="bg-no-repeat bg-center md:bg-hero-pattern">
-				<Container className=" nav pt-8 items-center md:pb-16">
-					<Col colEnd={[25, null, 14, null, 14]}>
-						<a href="#" id="logo">
-							<BehermanLogo />
-						</a>
-					</Col>
-					<Col className="hidden md:grid" colStart={[2, null, 14, null, 14]} colEnd={[25, null, 26, null, 26]}>
-						<div className="flex justify-between items-center">
-							<a href="#" className='underlined__links'>Home</a>
-							<a href="#" className="underlined__links">
-								About
-							</a>
-							<a href="#" className="underlined__links">
-								History
-							</a>
-							<a href="#" className="underlined__links">
-								Philanthropy
-							</a>
-							<a
-								href="#"
-								className="flex items-center rounded-full bg-white text-black py-3 px-6 btn border font-jetbrains text-sm uppercase  tracking-widest hover:bg-transparent hover:border-secondaryBlue hover:text-white transition-all"
-							>
-								Contact
-							</a>
-						</div>
-					</Col>
-				</Container>
-				<Container>
-					<Col className="text-6xl md:text-7xl pt-14 pb-12 md:py-32" colStart={[2, null, 3, null, 3]} colEnd={[25, null, 18, null, 17]}>
-						<h2 className="font-jetbrains uppercase font-bold tracking-widest	">Nearly a century driven by a passion for excellence</h2>
-					</Col>
-				</Container>
-				<MobileMenu />
-			</header>
+			<Header />
 
 			<section id="section__vision" className="pb-14 md:pb-32">
 				<Container>
@@ -165,78 +128,6 @@ const Page: NextPage = () => {
 					</Col>
 				</Container>
 			</section>
-
-			<footer className="bg-tertiaryBlue pb-9">
-				<Container className="py-8 md:py-16">
-					<Col className="justify-start" colEnd={[26, null, 18, null, 14]}>
-						<div className="flex flex-col items-start">
-							<h4 className="text-2xl pb-9">
-								Want to know more?
-								<br />
-								Want to meet us?
-								<br />
-								Be part of the adventure?
-							</h4>
-							<a
-								href="#"
-								className="flex items-center rounded-full bg-transparent text-white py-3 px-6 btn border border-secondaryBlue font-jetbrains text-sm uppercase  tracking-widest hover:bg-white hover:border-white hover:text-black transition-all whitespace-nowrap"
-							>
-								<span className="mr-4">Contact us</span>
-								<Arrow />
-							</a>
-						</div>
-					</Col>
-
-					<Col className="hidden md:grid" colStart={[2, null, 18, null, 14]} colEnd={[26, null, 24, null, 20]}>
-						<a href="#" className="footer__links ">
-							Home
-						</a>
-						<a href="#" className="footer__links ">
-							About
-						</a>
-						<a href="#" className="footer__links ">
-							History
-						</a>
-						<a href="#" className="footer__links ">
-							Contact
-						</a>
-					</Col>
-					<Col className="tracking-widest pt-14 md:pt-0" colStart={[2, null, 18, null, 20]} colEnd={[26, null, 18, null, 26]}>
-						<p>INDUSTRIEWEG, 3 2880 BORNEM BELGIUM</p>
-						<div className="flex flex-col text-sm">
-							<a href="tel:+">+32 (0)3 890 91 11</a>
-							<p>+32 (0)3 890 91 18</p>
-							<a href="mailto:jacques.beherman@beherman.com">jacques.beherman@beherman.com</a>
-						</div>
-					</Col>
-				</Container>
-				<Container>
-					<Col className="" colEnd={[26, null, 18, null, 8]}>
-						<img src="/logo-beherman-corpo.png" alt="Beherman log" />
-					</Col>
-					<Col className="text-xs" colStart={[2, null, 18, null, 8]} colEnd={[26, null, 24, null, 26]}>
-						<div className="flex flex-col justify-between md:justify-end gap-4 md:flex-row">
-							<div className="flex py-3 justify-between border-b border-textBlueGrey md:border-0 md:py-0 md:gap-4">
-								<a href="#" className="text-textBlueGrey">
-									Cookie settings
-								</a>
-								<a href="#" className="text-textBlueGrey">
-									Terms & conditions
-								</a>
-								<a href="#" className="text-textBlueGrey">
-									Privacy policy
-								</a>
-							</div>
-							<div className="flex justify-between md:gap-4 ">
-								<p className="text-textBlueGrey">2022 Beherman Group. All rights reserved</p>
-								<a href="https://www.caracal.agency/en">
-									<CaracalLogo />
-								</a>
-							</div>
-						</div>
-					</Col>
-				</Container>
-			</footer>
 			<Footer />
 		</div>
 	);

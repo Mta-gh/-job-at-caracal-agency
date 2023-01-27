@@ -79,6 +79,17 @@ small {
 	transform: scaleX(1);
 }
 
+/* underline current page in the menu */
+.current__page:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: -2px;
+	left: 0;
+	background-color: #ffffff;
+}
+
 /* Mobile menu */
 .burger__menu {
 	position: fixed;
@@ -123,3 +134,4 @@ small {
 .is__open .test__menu {
 	left: 0;
 }
+
