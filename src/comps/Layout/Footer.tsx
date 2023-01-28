@@ -2,6 +2,9 @@ import React from 'react';
 import Col from '../Layout/Col';
 import Container from '../Layout/Container';
 import Arrow from '../Svg/Arrow';
+import Phone from '../Svg/Phone';
+import Fax from '../Svg/Fax';
+import Email from '../Svg/Email';
 import BehermanLogo from '../Svg/Beherman';
 import CaracalLogo from '../Svg/CaracalLogo';
 import Image from 'next/image';
@@ -44,11 +47,20 @@ const Footer = () => {
 						</a>
 					</Col>
 					<Col className="tracking-widest pt-14 md:pt-0" colStart={[2, null, 18, null, 20]} colEnd={[26, null, 18, null, 26]}>
-						<p>INDUSTRIEWEG, 3 2880 BORNEM BELGIUM</p>
+						<p className='mb-7'>INDUSTRIEWEG, 3 2880 BORNEM BELGIUM</p>
 						<div className="flex flex-col text-sm">
-							<a href="tel:+">+32 (0)3 890 91 11</a>
-							<p>+32 (0)3 890 91 18</p>
-							<a href="mailto:jacques.beherman@beherman.com">jacques.beherman@beherman.com</a>
+							<span className='flex items-center mb-3'>
+								<Phone />
+								<a href="tel:+">+32 (0)3 890 91 11</a>
+							</span>
+							<span className='flex items-center mb-3'>
+								<Fax />
+								<p>+32 (0)3 890 91 18</p>
+							</span>
+							<span className="flex items-center mb-3">
+								<Email />
+								<a href="mailto:jacques.beherman@beherman.com">jacques.beherman@beherman.com</a>
+							</span>
 						</div>
 					</Col>
 				</Container>

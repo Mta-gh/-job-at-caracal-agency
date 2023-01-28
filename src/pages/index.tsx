@@ -22,8 +22,6 @@ const Page: NextPage = () => {
 					<Col className="md:pt-32" colStart={[1, null, 2, null, 2]} colEnd={[27, null, 12, null, 12]}>
 						{/*change to next image comonent*/}
 						<Image src="/Pano2-1.jpg" alt="image" width={800} height={600} />
-
-						{/* <img src="/Pano2-1.jpg" alt="Beherman Buiding" className="w-full" /> */}
 					</Col>
 					<Col className="pt-12 pb-8 md:pt-36" colStart={[2, null, 18, null, 13]} colEnd={[26, null, 15, null, 15]}>
 						<span className="w-28 h-0 border border-white		"></span>
@@ -134,3 +132,6 @@ const Page: NextPage = () => {
 };
 
 export default Page;
+
+
+

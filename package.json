@@ -14,7 +14,7 @@
 		"classnames": "^2.3.2",
 		"currency.js": "^2.0.4",
 		"dayzed": "^3.2.3",
-		"framer-motion": "^7.10.0",
+		"framer-motion": "^7.10.3",
 		"lodash": "^4.17.21",
 		"next": "^13.1.5",
 		"react": "^18.2.0",
