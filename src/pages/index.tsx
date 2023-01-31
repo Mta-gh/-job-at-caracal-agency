@@ -99,7 +99,7 @@ const Page: NextPage = () => {
 					<Col className="" colStart={[1, null, 3, null, 3]} colEnd={[27, null, 17, null, 17]}>
 							<Image src="/the-board.jpg" alt="image" width={800} height={600} />
 					</Col>
-					<Col className="md:px-24" colStart={[2, null, 18, null, 17]} colEnd={[26, null, 24, null, 26]}>
+					<Col className="md:pl-10 md:ml-10 md:border-l" colStart={[2, null, 18, null, 17]} colEnd={[26, null, 24, null, 26]}>
 						<div className="grid grid-cols-2 justify-between  md:flex md:flex-col ">
 							<h5 className="uppercase font-jetbrains text-sm py-6 md:pb-12 col-span-2 md:pt-0">Left to right</h5>
 							<div className="flex flex-col pb-8">
