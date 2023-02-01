@@ -20,23 +20,26 @@ const Page: NextPage = () => {
 			<section id="section__vision" className="pb-14 md:pb-32">
 				<Container>
 					<Col className="md:pt-32" colStart={[1, null, 2, null, 2]} colEnd={[27, null, 12, null, 12]}>
-						{/*change to next image comonent*/}
 						<Image src="/Pano2-1.jpg" alt="image" width={800} height={600} />
 					</Col>
-					<Col className="pt-12 pb-8 md:pt-36" colStart={[2, null, 18, null, 13]} colEnd={[26, null, 15, null, 15]}>
-						<span className="w-28 h-0 border border-white		"></span>
-					</Col>
-					<Col className="" colStart={[2, null, 16, null, 16]} colEnd={[26, null, 24, null, 26]}>
+					{/* <Col className="pt-12 pb-8 md:pt-36" colStart={[2, null, 18, null, 13]} colEnd={[26, null, 15, null, 15]}>
+						<span className="w-28 h-0 border border-white "></span>
+					</Col> */}
+					<Col className="" colStart={[2, null, 13, null, 13]} colEnd={[26, null, 26, null, 26]}>
 						<div className="flex flex-col">
-							<h2 className="text-4xl pb-6 md:text-5xl md:pb-20">Our Vision</h2>
-
-							<strong className="font-normal	text-secondaryBlue text-xl pb-10 md:text-2xl">
-								Our corporate vision for the future is based on the secure foundation of experience and tradition.
-							</strong>
-							<p className="text-textBlueGrey">
-								Flexibility and adaptability are vital to our company’s future. We will invest in new technologies where appropriate and adopt an evolutionary approach for our tools
-								and services. Our aim is to respond efficiently and effectively to new markets in a multicultural context.
-							</p>
+							<h2 className="text-4xl pb-6 md:text-5xl md:pb-20 md:ml-36">Our Vision</h2>
+							<div className="flex flex-col justify-end md:gap-32 md:flex-row">
+								<span className="w-28 h-0 border border-white mt-4"></span>
+								<div className="flex flex-col md:max-w-md">
+									<strong className="font-normal	text-secondaryBlue text-xl pb-10 md:text-2xl">
+										Our corporate vision for the future is based on the secure foundation of experience and tradition.
+									</strong>
+									<p className="text-textBlueGrey">
+										Flexibility and adaptability are vital to our company’s future. We will invest in new technologies where appropriate and adopt an evolutionary approach for our tools
+										and services. Our aim is to respond efficiently and effectively to new markets in a multicultural context.
+									</p>
+								</div>
+							</div>
 						</div>
 					</Col>
 				</Container>
