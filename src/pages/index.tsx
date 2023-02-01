@@ -27,7 +27,7 @@ const Page: NextPage = () => {
 						<span className="h-0 border border-white flex w-full"></span>
 					</Col>
 					{/* Text col */}
-					<Col className="pt-12 md:pt-4" colStart={[2, null, 2, null, 16]} colEnd={[26, null, 25, null, 25]}>
+					<Col className="pt-12 md:pt-4" colStart={[2, null, 14, null, 16]} colEnd={[26, null, 25, null, 25]}>
 						<div className="flex flex-col">
 							{/* Title */}
 							<h2 className="pb-8 md:pb-10 text-4xl xl:pb-20 md:text-5xl xl:-ml-16">Our vision</h2>
