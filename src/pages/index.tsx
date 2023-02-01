@@ -70,20 +70,25 @@ const Page: NextPage = () => {
 
 			<section id="section__commitement" className="md:pb-32">
 				<Container>
-					<Col className="pt-12 pb-8 md:pt-40" colEnd={[26, null, 4, null, 4]}>
-						<span className="w-28 h-0 border border-white		"></span>
+					<Col className="hidden pt-12 pb-8 md:pt-40 xl:max-w-28 xl:flex" colEnd={[26, null, null, null, 4]}>
+						<span className="h-0 border border-white flex w-full"></span>
 					</Col>
-					<Col className="pt-4" colStart={[2, null, 5, null, 5]} colEnd={[26, null, 14, null, 14]}>
+					<Col className="pt-4" colStart={[2, null, 2, null, 4]} colEnd={[26, null, 14, null, 14]}>
 						<div className="flex flex-col">
-							<h2 className="pb-6 text-4xl	md:pb-20 md:text-5xl md:-ml-16">Commitment</h2>
-
-							<strong className="font-normal	text-secondaryBlue text-xl pb-10 md:text-2xl">
-								In a world committed to the ecological transition, we want to make our contribution by building the mobility solutions of tomorrow.
-							</strong>
-							<p className="text-textBlueGrey">
-								The brands we are working with today, Fuso and Piaggio, are paving the way for new ways of conceiving transportation, on roads all over the world, at city entrances and
-								even within urban traffic.
-							</p>
+							{/* Title */}
+							<h2 className="pb-6 md:pb-10 text-4xl xl:pb-20 md:text-5xl xl:-ml-16">Commitment</h2>
+							{/* Blue paragraph */}
+							<span className="mb-10 h-0 border border-white flex w-28 xl:hidden"></span>
+							<div className="flex flex-col xl:ml-14">
+								<strong className="font-normal	text-secondaryBlue text-xl pb-10 md:text-2xl">
+									In a world committed to the ecological transition, we want to make our contribution by building the mobility solutions of tomorrow.
+								</strong>
+								{/* standard paragraph */}
+								<p className="text-textBlueGrey">
+									The brands we are working with today, Fuso and Piaggio, are paving the way for new ways of conceiving transportation, on roads all over the world, at city entrances and
+									even within urban traffic.
+								</p>
+							</div>
 						</div>
 					</Col>
 					<Col className="row-start-1 md:row-auto md:pt-36" colStart={[1, null, 16, null, 16]} colEnd={[27, null, 26, null, 26]}>
