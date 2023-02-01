@@ -4,7 +4,6 @@
 
 @layer base {
 	:root {
-		/* For rgb(255 115 179 / <alpha-value>) */
 		--color-primary: #070d31;
 		--color-secondary: #8bc0f1;
 		--color-tertiary: #04081f;
