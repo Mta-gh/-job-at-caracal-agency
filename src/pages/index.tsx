@@ -105,17 +105,17 @@ const Page: NextPage = () => {
 
 			<section id="section__board" className="pt-14 pb-14 md:pt-0 md:pb-32">
 				<Container>
-					<Col className="pb-6 text-5xl md:pb-20" colStart={[2, null, 3, null, 3]} colEnd={[26, null, 24, null, 26]}>
+					<Col className="pb-6 text-5xl md:pb-20" colStart={[2, null, 2, null, 3]} colEnd={[26, null, 24, null, 26]}>
 						<h2 className="text-4xl md:text-5xl ">The Board</h2>
 					</Col>
 				</Container>
 				<Container>
-					<Col className="" colStart={[1, null, 3, null, 3]} colEnd={[27, null, 17, null, 17]}>
-							<Image src="/the-board.jpg" alt="image" width={800} height={600} />
+					<Col className="items-center" colStart={[1, null, 2, null, 3]} colEnd={[27, null, 26, null, 17]}>
+							<Image src="/the-board.jpg" alt="image" width={1300} height={600} />
 					</Col>
-					<Col className="md:pl-10 md:ml-10 md:border-l" colStart={[2, null, 18, null, 17]} colEnd={[26, null, 24, null, 26]}>
-						<div className="grid grid-cols-2 justify-between  md:flex md:flex-col ">
-							<h5 className="uppercase font-jetbrains text-sm py-6 md:pb-12 col-span-2 md:pt-0">Left to right</h5>
+					<Col className="md:pl-10 xl:ml-10 xl:border-l" colStart={[2, null, 2, null, 17]} colEnd={[26, null, 24, null, 26]}>
+						<div className="grid grid-cols-2 justify-between  xl:flex xl:flex-col ">
+							<h5 className="uppercase font-jetbrains text-sm py-6 md:pb-12 col-span-2 xl:pt-0">Left to right</h5>
 							<div className="flex flex-col pb-8">
 								<p>Paul Borghgraef</p>
 								<small>Director</small>
