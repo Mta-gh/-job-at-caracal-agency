@@ -26,12 +26,12 @@ useEffect(() => {
   return (
 				<nav>
 					<Container className=" nav pt-8 items-center md:pb-16">
-						<Col colEnd={[25, null, 14, null, 14]}>
+						<Col colEnd={[25, null, 10, null, 14]}>
 							<a href="#" id="logo">
 								<BehermanLogo />
 							</a>
 						</Col>
-						<Col className="hidden md:grid" colStart={[2, null, 14, null, 14]} colEnd={[25, null, 26, null, 26]}>
+						<Col className="hidden md:grid" colStart={[2, null, 10, null, 14]} colEnd={[25, null, 26, null, 26]}>
 							<div className="flex justify-between items-center">
 								<a href="/" className='underlined__links nav__links'>Home</a>
 								<a href="#" className="underlined__links nav__links">
