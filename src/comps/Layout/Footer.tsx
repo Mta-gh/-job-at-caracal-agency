@@ -32,7 +32,7 @@ const Footer = () => {
 						</div>
 					</Col>
 
-					<Col className="hidden md:grid" colStart={[2, null, 14, null, 14]} colEnd={[26, null, 20, null, 20]}>
+					<Col className="hidden md:grid" colStart={[2, null, 14, null, 14]} colEnd={[26, null, 18, null, 20]}>
 						<a href="#" className="footer__links ">
 							Home
 						</a>
@@ -46,7 +46,7 @@ const Footer = () => {
 							Contact
 						</a>
 					</Col>
-					<Col className="tracking-widest pt-14 md:pt-0" colStart={[2, null, 20, null, 20]} colEnd={[26, null, 26, null, 26]}>
+					<Col className="tracking-widest pt-14 md:pt-0" colStart={[2, null, 18, null, 20]} colEnd={[26, null, 26, null, 26]}>
 						<p className='mb-7'>INDUSTRIEWEG, 3 2880 BORNEM BELGIUM</p>
 						<div className="flex flex-col text-sm">
 							<span className='flex items-center mb-3'>
