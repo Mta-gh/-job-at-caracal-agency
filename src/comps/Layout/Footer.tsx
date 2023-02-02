@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <footer className="bg-tertiaryBlue pb-9">
       <Container className="py-8 md:py-16">
-					<Col className="justify-start" colEnd={[26, null, 18, null, 14]}>
+					<Col className="justify-start" colEnd={[26, null, 14, null, 14]}>
 						<div className="flex flex-col items-start">
 							<h4 className="text-2xl pb-9">
 								Want to know more?
@@ -32,7 +32,7 @@ const Footer = () => {
 						</div>
 					</Col>
 
-					<Col className="hidden md:grid" colStart={[2, null, 18, null, 14]} colEnd={[26, null, 24, null, 20]}>
+					<Col className="hidden md:grid" colStart={[2, null, 14, null, 14]} colEnd={[26, null, 20, null, 20]}>
 						<a href="#" className="footer__links ">
 							Home
 						</a>
@@ -46,7 +46,7 @@ const Footer = () => {
 							Contact
 						</a>
 					</Col>
-					<Col className="tracking-widest pt-14 md:pt-0" colStart={[2, null, 18, null, 20]} colEnd={[26, null, 18, null, 26]}>
+					<Col className="tracking-widest pt-14 md:pt-0" colStart={[2, null, 20, null, 20]} colEnd={[26, null, 26, null, 26]}>
 						<p className='mb-7'>INDUSTRIEWEG, 3 2880 BORNEM BELGIUM</p>
 						<div className="flex flex-col text-sm">
 							<span className='flex items-center mb-3'>
@@ -65,10 +65,10 @@ const Footer = () => {
 					</Col>
 				</Container>
 				<Container>
-					<Col className="" colEnd={[26, null, 18, null, 8]}>
+					<Col className="" colEnd={[26, null, 8, null, 8]}>
 						<img src="/logo-beherman-corpo.png" alt="Beherman log" />
 					</Col>
-					<Col className="text-xs" colStart={[2, null, 18, null, 8]} colEnd={[26, null, 24, null, 26]}>
+					<Col className="text-xs" colStart={[2, null, 8, null, 8]} colEnd={[26, null, 26, null, 26]}>
 						<div className="flex flex-col justify-between md:justify-end gap-4 md:flex-row">
 							<div className="flex py-3 justify-between border-b border-textBlueGrey md:border-0 md:py-0 md:gap-4">
 								<a href="#" className="text-textBlueGrey">
