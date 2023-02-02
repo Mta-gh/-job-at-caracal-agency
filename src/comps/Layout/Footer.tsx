@@ -65,12 +65,12 @@ const Footer = () => {
 					</Col>
 				</Container>
 				<Container>
-					<Col className="" colEnd={[26, null, 8, null, 8]}>
+					<Col className="" colEnd={[26, null, 26, null, 8]}>
 						<img src="/logo-beherman-corpo.png" alt="Beherman log" />
 					</Col>
-					<Col className="text-xs" colStart={[2, null, 8, null, 8]} colEnd={[26, null, 26, null, 26]}>
-						<div className="flex flex-col justify-between md:justify-end gap-4 md:flex-row">
-							<div className="flex py-3 justify-between border-b border-textBlueGrey md:border-0 md:py-0 md:gap-4">
+					<Col className="text-xs" colStart={[2, null, 2, null, 8]} colEnd={[26, null, 26, null, 26]}>
+						<div className="flex flex-col justify-between xl:justify-end gap-4 xl:flex-row">
+							<div className="flex py-3 justify-between border-b border-textBlueGrey xl:border-0 xl:py-0 xl:gap-4">
 								<a href="#" className="text-textBlueGrey">
 									Cookie settings
 								</a>
