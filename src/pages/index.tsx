@@ -6,6 +6,7 @@ import Container from '../comps/Layout/Container';
 import Header from '../comps/Layout/Header';
 import Footer from '../comps/Layout/Footer';
 import Arrow from '../comps/Svg/Arrow';
+import AnimatedBox from '../comps/Animations/test1';
 import Image from 'next/image';
 
 const Page: NextPage = () => {
@@ -15,6 +16,8 @@ const Page: NextPage = () => {
 				<title>Beherman Group - Home</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
+			<AnimatedBox />
+
 			<Header />
 
 			<section id="section__vision" className="pb-14 md:pb-32">
