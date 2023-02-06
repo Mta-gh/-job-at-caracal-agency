@@ -7,6 +7,8 @@ import Header from '../comps/Layout/Header';
 import Footer from '../comps/Layout/Footer';
 import Arrow from '../comps/Svg/Arrow';
 import AnimatedBox from '../comps/Animations/test1';
+// import AnimatedElement from '../comps/Animations/Scrolltrigger';
+
 import Image from 'next/image';
 
 const Page: NextPage = () => {
