@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import { motion } from 'framer-motion';
 import Head from 'next/head';
 
 import Col from '../comps/Layout/Col';
@@ -9,6 +10,7 @@ import Arrow from '../comps/Svg/Arrow';
 import AnimatedBox from '../comps/Animations/test1';
 import AnimatedElement from '../comps/Animations/Scrolltrigger';
 import AnimTest from '../comps/Animations/test2'
+
 
 import Image from 'next/image';
 

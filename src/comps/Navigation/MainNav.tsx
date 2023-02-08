@@ -24,6 +24,20 @@ const MainNav = () => {
     }
   };
 
+	const pageEnter ={
+		hidden: {
+			y: 200,
+			opacity: 0
+		},
+		visible: {
+			y: 0,
+			opacity: 1,
+			transition: {
+				delay: .4
+			}
+		}
+	}
+
 	const fromLeftAnim ={
     hidden: { 
 			opacity: 0,
@@ -92,7 +106,7 @@ useEffect(() => {
 					</Container>
 					<Container>
 						<Col className="text-6xl md:text-7xl pt-14 pb-12 md:py-32" colStart={[2, null, 3, null, 3]} colEnd={[25, null, 18, null, 17]}>
-							<h2 className="font-jetbrains uppercase font-bold tracking-widest	">Nearly a century driven by a passion for excellence</h2>
+							<motion.h2 className="font-jetbrains uppercase font-bold tracking-widest" initial="hidden" animate="visible" variants={pageEnter}>Nearly a century driven by a passion for excellence</motion.h2>
 						</Col>
 					</Container>
 				</nav>
