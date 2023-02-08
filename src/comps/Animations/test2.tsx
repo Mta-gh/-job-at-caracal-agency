@@ -41,19 +41,18 @@ const item ={
 	return (
 		<>
       <motion.div initial="hidden" animate="visible" variants={divVariant1}>
-        <h1>Knock knock Neo</h1>
+        <h1>Wake up Neo</h1>
       </motion.div>
       {/* staggered list */}
       <motion.div initial="hidden" animate="visible" variants={divVariant2}>
-        {/* <p>Wake up</p> */}
         <motion.p variants={item}>
-            Wake up
+        The Matrix has you
         </motion.p>
         <motion.p variants={item}>
-          The Matrix has you
+        Follow the white rabbit
         </motion.p>
         <motion.p variants={item}>
-          Follow the white rabbit
+          Knock knock Neo
         </motion.p>
       </motion.div>
 		</>
