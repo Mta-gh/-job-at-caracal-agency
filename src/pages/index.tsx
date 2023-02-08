@@ -7,7 +7,7 @@ import Header from '../comps/Layout/Header';
 import Footer from '../comps/Layout/Footer';
 import Arrow from '../comps/Svg/Arrow';
 import AnimatedBox from '../comps/Animations/test1';
-// import AnimatedElement from '../comps/Animations/Scrolltrigger';
+import AnimatedElement from '../comps/Animations/Scrolltrigger';
 
 import Image from 'next/image';
 
@@ -50,10 +50,9 @@ const Page: NextPage = () => {
 							</div>
 						</div>
 					</Col>
-					
 				</Container>
 			</section>
-
+			<AnimatedElement />
 			<section id="section__banner" className="md:pb-32">
 				<Container>
 					<Col className="bg-secondaryBlue p-10 md:py-16" colStart={[1, null, 3, null, 3]} colEnd={[27, null, 27, null, 27]}>
