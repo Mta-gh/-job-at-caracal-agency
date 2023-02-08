@@ -1,5 +1,6 @@
 import '../styles/global.css';
 
+import type { AnimatePresence } from 'framer-motion';
 import localFont from '@next/font/local';
 import type { AppProps } from 'next/app';
 
@@ -32,9 +33,9 @@ const karla = localFont({
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
-		<div className={`${karla.variable} ${jetbrains.variable} font-karla`}>
-			<Component {...pageProps} />
-		</div>
+			<div className={`${karla.variable} ${jetbrains.variable} font-karla`}>
+				<Component {...pageProps} />
+			</div>
 	);
 }
 

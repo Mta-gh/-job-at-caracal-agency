@@ -8,6 +8,7 @@ import Footer from '../comps/Layout/Footer';
 import Arrow from '../comps/Svg/Arrow';
 import AnimatedBox from '../comps/Animations/test1';
 import AnimatedElement from '../comps/Animations/Scrolltrigger';
+import AnimTest from '../comps/Animations/test2'
 
 import Image from 'next/image';
 
@@ -18,9 +19,8 @@ const Page: NextPage = () => {
 				<title>Beherman Group - Home</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<AnimatedBox />
-
 			<Header />
+			<AnimTest />
 
 			<section id="section__vision" className="pb-14 md:pb-32">
 			<Container>
@@ -52,7 +52,6 @@ const Page: NextPage = () => {
 					</Col>
 				</Container>
 			</section>
-			<AnimatedElement />
 			<section id="section__banner" className="md:pb-32">
 				<Container>
 					<Col className="bg-secondaryBlue p-10 md:py-16" colStart={[1, null, 3, null, 3]} colEnd={[27, null, 27, null, 27]}>
