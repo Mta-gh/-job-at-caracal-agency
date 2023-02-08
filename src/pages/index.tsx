@@ -20,7 +20,7 @@ const Page: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Header />
-			<AnimTest />
+			{/* <AnimTest /> */}
 
 			<section id="section__vision" className="pb-14 md:pb-32">
 			<Container>
