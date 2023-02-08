@@ -15,6 +15,28 @@ import AnimTest from '../comps/Animations/test2'
 import Image from 'next/image';
 
 const Page: NextPage = () => {
+	const sectionAnimLeft ={
+		hidden: {opacity:0, x:-100},
+		visible: {
+			opacity:1, 
+			x:0,
+			transition: {
+				delay: .2
+			}
+			}
+	}
+
+	const sectionAnimRight ={
+		hidden: {opacity: 0, x: 100},
+		visible: {
+			opacity:1, 
+			x:0,
+			transition: {
+				delay: .2
+			}
+			}
+	}
+
 	return (
 		<div className="py-2">
 			<Head>
@@ -24,8 +46,8 @@ const Page: NextPage = () => {
 			<Header />
 			{/* <AnimTest /> */}
 
-			<section id="section__vision" className="pb-14 md:pb-32">
-			<Container>
+			<motion.section id="section__vision" className="pb-14 md:pb-32" initial="hidden" whileInView="visible" variants={sectionAnimRight}>
+				<Container>
 					<Col className="row-start-1 md:row-auto md:pt-36" colStart={[1, null, 2, null, 2]} colEnd={[27, null, 12, null, 12]}>
 						<Image src="/Pano2-1.jpg" alt="image" width={800} height={600} />
 					</Col>
@@ -53,8 +75,9 @@ const Page: NextPage = () => {
 						</div>
 					</Col>
 				</Container>
-			</section>
-			<section id="section__banner" className="md:pb-32">
+			</motion.section>
+			
+			<motion.section id="section__banner" className="md:pb-32" initial="hidden" whileInView="visible" variants={sectionAnimRight}>
 				<Container>
 					<Col className="bg-secondaryBlue p-10 md:py-16" colStart={[1, null, 3, null, 3]} colEnd={[27, null, 27, null, 27]}>
 						<Container>
@@ -75,9 +98,9 @@ const Page: NextPage = () => {
 						</Container>
 					</Col>
 				</Container>
-			</section>
+			</motion.section>
 
-			<section id="section__commitement" className="md:pb-32">
+			<motion.section id="section__commitement" className="md:pb-32" initial="hidden" whileInView="visible" variants={sectionAnimLeft}>
 				<Container>
 					{/* large screen Line col */}
 					<Col className="hidden pt-12 pb-8 md:pt-40 xl:max-w-28 xl:flex" colEnd={[26, null, null, null, 4]}>
@@ -106,9 +129,9 @@ const Page: NextPage = () => {
 						<Image src="/blue-truck.jpg" alt="image" width={800} height={600} />
 					</Col>
 				</Container>
-			</section>
+			</motion.section>
 
-			<section id="section__board" className="pt-14 pb-14 md:pt-0 md:pb-32">
+			<motion.section id="section__board" className="pt-14 pb-14 md:pt-0 md:pb-32" initial="hidden" whileInView="visible" variants={sectionAnimLeft}>
 				<Container>
 					<Col className="pb-6 text-5xl md:pb-20" colStart={[2, null, 2, null, 3]} colEnd={[26, null, 24, null, 26]}>
 						<h2 className="text-4xl md:text-5xl ">The Board</h2>
@@ -144,7 +167,7 @@ const Page: NextPage = () => {
 						</div>
 					</Col>
 				</Container>
-			</section>
+			</motion.section>
 			<Footer />
 		</div>
 	);
