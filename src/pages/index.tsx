@@ -46,7 +46,7 @@ const Page: NextPage = () => {
 			<Header />
 			{/* <AnimTest /> */}
 
-			<motion.section id="section__vision" className="pb-14 md:pb-32" initial="hidden" whileInView="visible" variants={sectionAnimRight}>
+			<motion.section id="section__vision" className="pb-14 md:pb-32" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={sectionAnimRight}>
 				<Container>
 					<Col className="row-start-1 md:row-auto md:pt-36" colStart={[1, null, 2, null, 2]} colEnd={[27, null, 12, null, 12]}>
 						<Image src="/Pano2-1.jpg" alt="image" width={800} height={600} />
@@ -77,7 +77,7 @@ const Page: NextPage = () => {
 				</Container>
 			</motion.section>
 			
-			<motion.section id="section__banner" className="md:pb-32" initial="hidden" whileInView="visible" variants={sectionAnimRight}>
+			<motion.section id="section__banner" className="md:pb-32" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={sectionAnimRight}>
 				<Container>
 					<Col className="bg-secondaryBlue p-10 md:py-16" colStart={[1, null, 3, null, 3]} colEnd={[27, null, 27, null, 27]}>
 						<Container>
@@ -100,7 +100,7 @@ const Page: NextPage = () => {
 				</Container>
 			</motion.section>
 
-			<motion.section id="section__commitement" className="md:pb-32" initial="hidden" whileInView="visible" variants={sectionAnimLeft}>
+			<motion.section id="section__commitement" className="md:pb-32" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={sectionAnimLeft}>
 				<Container>
 					{/* large screen Line col */}
 					<Col className="hidden pt-12 pb-8 md:pt-40 xl:max-w-28 xl:flex" colEnd={[26, null, null, null, 4]}>
@@ -131,7 +131,7 @@ const Page: NextPage = () => {
 				</Container>
 			</motion.section>
 
-			<motion.section id="section__board" className="pt-14 pb-14 md:pt-0 md:pb-32" initial="hidden" whileInView="visible" variants={sectionAnimLeft}>
+			<motion.section id="section__board" className="pt-14 pb-14 md:pt-0 md:pb-32" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={sectionAnimLeft}>
 				<Container>
 					<Col className="pb-6 text-5xl md:pb-20" colStart={[2, null, 2, null, 3]} colEnd={[26, null, 24, null, 26]}>
 						<h2 className="text-4xl md:text-5xl ">The Board</h2>
