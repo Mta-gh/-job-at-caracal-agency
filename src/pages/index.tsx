@@ -38,7 +38,7 @@ const Page: NextPage = () => {
 	}
 
 	return (
-		<div className="py-2">
+		<div className="py-2 overflow-x-hidden	">
 			<Head>
 				<title>Beherman Group - Home</title>
 				<link rel="icon" href="/favicon.ico" />

@@ -32,17 +32,17 @@ const Footer = () => {
 						</div>
 					</Col>
 
-					<Col className="hidden md:grid" colStart={[2, null, 14, null, 14]} colEnd={[26, null, 18, null, 20]}>
-						<a href="#" className="footer__links ">
+					<Col className="hidden justify-items-start items-center	md:grid" colStart={[2, null, 14, null, 14]} colEnd={[26, null, 18, null, 20]}>
+						<a href="#" className="footer__links underlined__links">
 							Home
 						</a>
-						<a href="#" className="footer__links ">
+						<a href="#" className="footer__links underlined__links">
 							About
 						</a>
-						<a href="#" className="footer__links ">
+						<a href="#" className="footer__links underlined__links">
 							History
 						</a>
-						<a href="#" className="footer__links ">
+						<a href="#" className="footer__links underlined__links">
 							Contact
 						</a>
 					</Col>
