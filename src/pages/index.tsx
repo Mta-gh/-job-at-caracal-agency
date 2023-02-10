@@ -1,5 +1,7 @@
 import type { NextPage } from 'next';
 import { motion } from 'framer-motion';
+import React, { useEffect } from 'react';
+
 import Head from 'next/head';
 
 import Col from '../comps/Layout/Col';
@@ -15,26 +17,33 @@ import AnimTest from '../comps/Animations/test2'
 import Image from 'next/image';
 
 const Page: NextPage = () => {
-	const sectionAnimLeft ={
-		hidden: {opacity:0, x:-100},
-		visible: {
-			opacity:1, 
-			x:0,
-			transition: {
-				delay: .2
+	let sectionAnimLeft ={};
+	let sectionAnimRight ={};
+	if (typeof window !== "undefined") {
+		const isMobile = window.innerWidth < 768;
+		if (!isMobile) {
+			sectionAnimLeft ={
+				hidden: {opacity:0, x:-100},
+				visible: {
+					opacity:1, 
+					x:0,
+					transition: {
+						delay: .2
+					}
+				}
 			}
+		
+			sectionAnimRight ={
+				hidden: {opacity: 0, x: 100},
+				visible: {
+					opacity:1, 
+					x:0,
+					transition: {
+						delay: .2
+					}
+				}
 			}
-	}
-
-	const sectionAnimRight ={
-		hidden: {opacity: 0, x: 100},
-		visible: {
-			opacity:1, 
-			x:0,
-			transition: {
-				delay: .2
-			}
-			}
+		}
 	}
 
 	return (

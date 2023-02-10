@@ -12,7 +12,11 @@ const MainNav = () => {
 
   // Check Page and underline current page in the nav
   const { pathname } = useRouter();
-	
+	let pageEnter = {};
+
+
+
+
 	const divVariant2 ={
     hidden: { opacity: 0 },
     visible: {
@@ -24,16 +28,36 @@ const MainNav = () => {
     }
   };
 
-	const pageEnter ={
+	pageEnter ={
 		hidden: {
-			y: 200,
+			x: 200,
 			opacity: 0
 		},
 		visible: {
-			y: 0,
+			x: 0,
 			opacity: 1,
 			transition: {
 				delay: .4
+			}
+		}
+	}
+
+	// Different page enter for mobile and desktop
+	if (typeof window !== "undefined") {
+		const isMobile = window.innerWidth < 768;
+		if (!isMobile) {
+			pageEnter ={
+				hidden: {
+					y: 200,
+					opacity: 0
+				},
+				visible: {
+					y: 0,
+					opacity: 1,
+					transition: {
+						delay: .4
+					}
+				}
 			}
 		}
 	}
