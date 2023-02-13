@@ -14,7 +14,7 @@ export default function Component() {
 	return (
 		<>
 			<div className={isOpen ? ' is__open' : ' is__closed'}>
-				<button onClick={() => setIsOpen((prev) => !prev)} className="burger__menu w-full h-10 md:hidden" >
+				<button onClick={() => setIsOpen((prev) => !prev)} className="burger__menu w-full h-10 lg:hidden" >
 					<span className="burger__line"></span>
 					<span className="burger__line"></span>
 					<span className="burger__line"></span>

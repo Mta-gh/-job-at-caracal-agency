@@ -105,7 +105,7 @@ useEffect(() => {
 								<BehermanLogo />
 							</motion.a>
 						</Col>
-						<Col className="hidden md:grid" colStart={[2, null, 10, null, 14]} colEnd={[25, null, 26, null, 26]}>
+						<Col className="hidden lg:grid" colStart={[2, null, 10, null, 14]} colEnd={[25, null, 26, null, 26]}>
 							<motion.div initial="hidden" animate="visible" variants={divVariant2} className="flex justify-between items-center">
 								<motion.a href="/" className='underlined__links nav__links' variants={item}>
 									Home
