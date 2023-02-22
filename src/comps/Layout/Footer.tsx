@@ -51,15 +51,15 @@ const Footer = () => {
 						<div className="flex flex-col text-sm">
 							<span className='flex items-center mb-3'>
 								<Phone />
-								<a href="tel:+">+32 (0)3 890 91 11</a>
+								<a href="tel:+" className='hover:text-secondaryBlue'>+32 (0)3 890 91 11</a>
 							</span>
 							<span className='flex items-center mb-3'>
 								<Fax />
-								<p>+32 (0)3 890 91 18</p>
+								<p className='hover:text-secondaryBlue'>+32 (0)3 890 91 18</p>
 							</span>
 							<span className="flex items-center mb-3">
 								<Email />
-								<a href="mailto:jacques.beherman@beherman.com">jacques.beherman@beherman.com</a>
+								<a href="mailto:jacques.beherman@beherman.com" className='hover:text-secondaryBlue'>jacques.beherman@beherman.com</a>
 							</span>
 						</div>
 					</Col>
@@ -71,13 +71,13 @@ const Footer = () => {
 					<Col className="text-xs" colStart={[2, null, 2, null, 8]} colEnd={[26, null, 26, null, 26]}>
 						<div className="flex flex-col justify-between xl:justify-end gap-4 xl:flex-row">
 							<div className="flex py-3 justify-between border-b border-textBlueGrey xl:border-0 xl:py-0 xl:gap-4">
-								<a href="#" className="text-textBlueGrey">
+								<a href="#" className="text-textBlueGrey hover:text-secondaryBlue">
 									Cookie settings
 								</a>
-								<a href="#" className="text-textBlueGrey">
+								<a href="#" className="text-textBlueGrey hover:text-secondaryBlue">
 									Terms & conditions
 								</a>
-								<a href="#" className="text-textBlueGrey">
+								<a href="#" className="text-textBlueGrey hover:text-secondaryBlue">
 									Privacy policy
 								</a>
 							</div>

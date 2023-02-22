@@ -53,7 +53,6 @@ const Page: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Header />
-
 			{/* Try and make a customisable section component */}
 			<motion.section id="section__vision" className="pb-14 md:pb-32" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={sectionAnimRight}>
 				<Container>
