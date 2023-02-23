@@ -8,12 +8,11 @@ import Col from '../comps/Layout/Col';
 import Container from '../comps/Layout/Container';
 import Header from '../comps/Layout/Header';
 import Footer from '../comps/Layout/Footer';
+import SectionWithImageAndText from '../comps/Layout/Section';
 import Arrow from '../comps/Svg/Arrow';
 import AnimatedBox from '../comps/Animations/test1';
 import AnimatedElement from '../comps/Animations/Scrolltrigger';
 import AnimTest from '../comps/Animations/test2'
-
-
 import Image from 'next/image';
 
 const Page: NextPage = () => {
@@ -177,6 +176,14 @@ const Page: NextPage = () => {
 				</Container>
 			</motion.section>
 			<Footer />
+
+			<SectionWithImageAndText
+        title="Title 1"
+        text="Text 1"
+        image="/Pano2-1.jpg"
+        imageFirst={true}
+      />
+
 		</div>
 	);
 };
