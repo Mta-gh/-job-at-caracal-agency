@@ -184,6 +184,13 @@ const Page: NextPage = () => {
         imageFirst={true}
       />
 
+			<SectionWithImageAndText
+        title="Title 1"
+        text="Text 1"
+        image="/Pano2-1.jpg"
+        imageFirst={false}
+      />
+
 		</div>
 	);
 };
