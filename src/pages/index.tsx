@@ -176,24 +176,26 @@ const Page: NextPage = () => {
 				</Container>
 			</motion.section>
 			<Footer />
-
-			<SectionWithImageAndText
-        title="Our vision"
-        blueText='Our corporate vision for the future is based on the secure foundation of
-				experience and tradition.'
-				standardText='Flexibility and adaptability are vital to our company’s future. We will invest in new technologies where appropriate and adopt an evolutionary approach for our tools and services. Our aim is to respond efficiently and effectively to new markets in a multicultural context.'
-        image="/Pano2-1.jpg"
-        imageFirst={true}
-      />
-
-			<SectionWithImageAndText
-        title="Title 1"
-        blueText='In a world committed to the ecological transition, we want to make our contribution by building the mobility solutions of tomorrow.'
-				standardText='-'
-        image="/Pano2-1.jpg"
-        imageFirst={false}
-      />
-
+			<motion.section id="section__vision" className="pb-14 md:pb-32" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={sectionAnimRight}>
+				<SectionWithImageAndText
+					title="Our vision"
+					blueText='Our corporate vision for the future is based on the secure foundation of
+					experience and tradition.'
+					standardText='Flexibility and adaptability are vital to our company’s future. We will invest in new technologies where appropriate and adopt an evolutionary approach for our tools and services. Our aim is to respond efficiently and effectively to new markets in a multicultural context.'
+					image="/Pano2-1.jpg"
+					imageFirst={true}
+				/>
+			</motion.section>
+			<motion.section id="section__commitement" className="md:pb-32" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={sectionAnimLeft}>
+				<SectionWithImageAndText
+					title="Title 1"
+					blueText='In a world committed to the ecological transition, we want to make our contribution by building the mobility solutions of tomorrow.'
+					standardText='The brands we are working with today, Fuso and Piaggio, are paving the way for new ways of conceiving transportation, on roads all over the world, at city entrances and
+					even within urban traffic.'
+					image="/Pano2-1.jpg"
+					imageFirst={false}
+				/>
+			</motion.section>
 		</div>
 	);
 };
